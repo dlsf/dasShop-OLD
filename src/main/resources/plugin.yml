@@ -1,0 +1,12 @@
+main: com.github.dlsf.dasshop.DasShop
+name: DasShop
+version: '1.0'
+api-version: '1.16'
+author: das_
+depend: [Vault]
+
+commands:
+  shop:
+    description: Open the admin shop
+  editshop:
+    description: Edit the admin shop
