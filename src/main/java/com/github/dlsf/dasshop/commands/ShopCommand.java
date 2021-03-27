@@ -19,8 +19,12 @@ public class ShopCommand implements CommandExecutor, TabCompleter {
         }
 
         Player player = (Player) sender;
-        // TODO: Permissions check
+        if (!player.hasPermission("dasshop.open")) {
+            player.sendMessage(Message.NO_PERMISSIONS.get());
+            return false;
+        }
 
+        // Open a shop category directly if specified
         if (args.length == 0) {
             ShopGUI.open(player); // TODO: Implement shop GUI
         } else {
@@ -32,7 +36,7 @@ public class ShopCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-        return null;
+        return null; // TODO: Return list of categories
     }
 
 }
