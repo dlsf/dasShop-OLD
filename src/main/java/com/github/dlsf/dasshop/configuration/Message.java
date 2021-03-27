@@ -17,6 +17,10 @@ public enum Message {
         this.defaultValue = defaultValue;
     }
 
+    public String getConfigKey() {
+        return configKey;
+    }
+
     public String getDefaultValue() {
         return defaultValue;
     }
