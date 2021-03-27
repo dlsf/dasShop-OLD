@@ -1,6 +1,6 @@
 main: com.github.dlsf.dasshop.DasShop
 name: DasShop
-version: '1.0'
+version: '@version@'
 api-version: '1.16'
 author: das_
 depend: [Vault]
